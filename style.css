@@ -1,0 +1,849 @@
+/* =========================================
+   SPINPOINT TABLE TENNIS CLUB
+   Main colors:
+   Dark Blue - #0B1F3A
+   Blue - #1565C0
+   Red - #E53935
+   White - #FFFFFF
+========================================= */
+
+
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffffff;
+    color: #0B1F3A;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.main-navbar {
+    background-color: #0B1F3A;
+    padding: 18px 0;
+    border-bottom: 2px solid #1565C0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #ffffff !important;
+}
+
+.logo span {
+    color: #E53935;
+}
+
+.navbar-nav {
+    gap: 10px;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: 600;
+    padding: 10px 18px !important;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #1565C0;
+    color: #ffffff !important;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero-section {
+    min-height: 650px;
+    background:
+        linear-gradient(120deg, #0B1F3A 0%, #102D52 70%, #1565C0 100%);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.small-label {
+    color: #E53935;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1.05;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.hero-content h1 span {
+    color: #E53935;
+}
+
+.hero-text {
+    max-width: 560px;
+    color: #e5eaf0;
+    font-size: 18px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.main-btn {
+    background-color: #E53935;
+    border: 2px solid #E53935;
+    padding: 13px 25px;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #E53935;
+    transform: translateY(-3px);
+}
+
+.second-btn {
+    padding: 13px 25px;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.second-btn:hover {
+    background-color: #1565C0;
+    border-color: #1565C0;
+}
+
+
+/* =========================================
+   TABLE TENNIS HERO ART
+========================================= */
+
+.ping-pong-art {
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+
+.table-shape {
+    position: absolute;
+    width: 330px;
+    height: 180px;
+    background-color: #1565C0;
+    border: 5px solid #ffffff;
+    transform: perspective(400px) rotateX(45deg) rotateZ(-8deg);
+    bottom: 70px;
+    left: 30px;
+    box-shadow: 20px 20px 0 #E53935;
+}
+
+.table-line {
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    background-color: #ffffff;
+    left: 50%;
+}
+
+.net {
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    background-color: #ffffff;
+    left: 0;
+    top: 50%;
+    opacity: 0.8;
+}
+
+.ping-ball {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    top: 60px;
+    right: 90px;
+    animation: ballMove 2.5s infinite alternate ease-in-out;
+    box-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+@keyframes ballMove {
+
+    from {
+        transform: translate(0, 30px);
+    }
+
+    to {
+        transform: translate(-100px, -70px);
+    }
+
+}
+
+.racket {
+    position: absolute;
+    width: 90px;
+    height: 130px;
+    border-radius: 50%;
+    transform: rotate(35deg);
+}
+
+.racket-one {
+    background-color: #E53935;
+    right: 20px;
+    bottom: 80px;
+}
+
+.racket-two {
+    background-color: #ffffff;
+    right: 120px;
+    bottom: 10px;
+    opacity: 0.85;
+}
+
+
+/* =========================================
+   INTRO SECTION
+========================================= */
+
+.intro-section {
+    padding: 90px 0;
+    background-color: #ffffff;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #0B1F3A;
+}
+
+.section-heading p {
+    color: #5f6f82;
+}
+
+
+/* =========================================
+   FEATURE CARDS
+========================================= */
+
+.feature-card {
+    height: 100%;
+    padding: 35px;
+    background-color: #f4f7fb;
+    border-left: 5px solid #1565C0;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    border-left-color: #E53935;
+    box-shadow: 0 15px 35px rgba(11,31,58,0.12);
+}
+
+.feature-number {
+    color: #E53935;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: #0B1F3A;
+    font-weight: 800;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.cta-section {
+    padding: 70px 0;
+    background-color: #1565C0;
+}
+
+.cta-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    color: #ffffff;
+}
+
+.cta-box h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.cta-box .small-label {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.page-header {
+    padding: 100px 0;
+    background:
+        linear-gradient(120deg, #0B1F3A, #1565C0);
+    color: #ffffff;
+}
+
+.page-header h1 {
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.page-header p:not(.small-label) {
+    color: #e8edf3;
+    font-size: 18px;
+}
+
+
+/* =========================================
+   CLUB INTRO
+========================================= */
+
+.club-intro {
+    padding: 90px 0;
+}
+
+.club-intro h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.club-image {
+    height: 400px;
+    position: relative;
+    background-color: #0B1F3A;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-circle {
+    width: 220px;
+    height: 220px;
+    background-color: #1565C0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    border: 8px solid #ffffff;
+}
+
+.red-decoration {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 15px solid #E53935;
+    right: -50px;
+    bottom: -50px;
+    transform: rotate(45deg);
+}
+
+.club-stats {
+    display: flex;
+    gap: 30px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.club-stats div {
+    display: flex;
+    flex-direction: column;
+}
+
+.club-stats strong {
+    font-size: 32px;
+    color: #1565C0;
+}
+
+.club-stats span {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   PROGRAMS
+========================================= */
+
+.program-section {
+    padding: 90px 0;
+    background-color: #f4f7fb;
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.program-card {
+    background-color: #ffffff;
+    padding: 35px;
+    border-top: 5px solid #1565C0;
+    transition: 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-8px);
+    border-top-color: #E53935;
+    box-shadow: 0 15px 30px rgba(11,31,58,0.12);
+}
+
+.program-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.program-card h3 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+/* =========================================
+   SCHEDULE
+========================================= */
+
+.schedule-section {
+    padding: 90px 0;
+}
+
+.schedule-table {
+    margin-top: 40px;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+.schedule-table th {
+    background-color: #0B1F3A;
+    color: #ffffff;
+    padding: 18px;
+    border: none;
+}
+
+.schedule-table td {
+    padding: 18px;
+    vertical-align: middle;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+    background-color: #f4f7fb;
+}
+
+.level {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.beginner {
+    background-color: #dcecff;
+    color: #1565C0;
+}
+
+.intermediate {
+    background-color: #ffe0df;
+    color: #E53935;
+}
+
+.all-levels {
+    background-color: #e6eef8;
+    color: #0B1F3A;
+}
+
+.competition {
+    background-color: #E53935;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   RULES
+========================================= */
+
+.rules-section {
+    padding: 80px 0;
+    background-color: #0B1F3A;
+}
+
+.rule-box {
+    padding: 35px;
+    background-color: #ffffff;
+    height: 100%;
+}
+
+.rule-box h3 {
+    font-weight: 800;
+    color: #1565C0;
+}
+
+.rule-box li {
+    margin-bottom: 12px;
+}
+
+.red-box {
+    border-top: 6px solid #E53935;
+}
+
+.red-box h3 {
+    color: #E53935;
+}
+
+
+/* =========================================
+   JOIN SECTION
+========================================= */
+
+.join-section {
+    padding: 90px 0;
+}
+
+.join-info h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 25px;
+    padding-left: 15px;
+    border-left: 4px solid #E53935;
+}
+
+.contact-item strong {
+    color: #1565C0;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.join-form {
+    padding: 40px;
+    background-color: #f4f7fb;
+    border-top: 6px solid #1565C0;
+}
+
+.join-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #0B1F3A;
+}
+
+.form-control,
+.form-select {
+    min-height: 50px;
+    border: 1px solid #ccd5df;
+    border-radius: 4px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #1565C0;
+    box-shadow: 0 0 0 0.2rem rgba(21,101,192,0.15);
+}
+
+textarea.form-control {
+    min-height: 130px;
+}
+
+.form-button {
+    width: 100%;
+}
+
+
+/* =========================================
+   MEMBERSHIP
+========================================= */
+
+.membership-section {
+    padding: 90px 0;
+    background-color: #f4f7fb;
+}
+
+.membership-card {
+    position: relative;
+    background-color: #ffffff;
+    padding: 35px;
+    text-align: center;
+    height: 100%;
+    border-top: 5px solid #1565C0;
+    transition: 0.3s;
+}
+
+.membership-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(11,31,58,0.12);
+}
+
+.membership-card h3 {
+    font-weight: 800;
+}
+
+.price {
+    font-size: 34px;
+    font-weight: 800;
+    color: #E53935;
+}
+
+.featured {
+    border-top-color: #E53935;
+    transform: scale(1.03);
+}
+
+.featured:hover {
+    transform: scale(1.03) translateY(-8px);
+}
+
+.popular {
+    display: inline-block;
+    background-color: #E53935;
+    color: #ffffff;
+    padding: 5px 12px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    background-color: #071629;
+    color: #ffffff;
+    padding: 45px 0;
+}
+
+.footer-logo {
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #b8c3d0;
+}
+
+
+/* =========================================
+   RESPONSIVE — 768 PX
+========================================= */
+
+@media (max-width: 991px) {
+
+    .hero-section {
+        min-height: auto;
+        padding: 70px 0;
+    }
+
+    .ping-pong-art {
+        margin-top: 50px;
+    }
+
+    .program-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cta-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .page-header h1 {
+        font-size: 48px;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE — 375 PX
+========================================= */
+
+@media (max-width: 575px) {
+
+    .main-navbar {
+        padding: 12px 0;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .hero-section {
+        padding: 55px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .ping-pong-art {
+        height: 280px;
+        transform: scale(0.75);
+        transform-origin: center;
+        margin-top: 10px;
+    }
+
+    .table-shape {
+        left: 0;
+    }
+
+    .page-header {
+        padding: 65px 0;
+    }
+
+    .page-header h1 {
+        font-size: 40px;
+    }
+
+    .intro-section,
+    .club-intro,
+    .program-section,
+    .schedule-section,
+    .join-section,
+    .membership-section {
+        padding: 60px 0;
+    }
+
+    .section-heading h2,
+    .club-intro h2,
+    .join-info h2 {
+        font-size: 30px;
+    }
+
+    .program-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .club-image {
+        height: 300px;
+    }
+
+    .image-circle {
+        width: 170px;
+        height: 170px;
+        font-size: 70px;
+    }
+
+    .club-stats {
+        gap: 20px;
+    }
+
+    .club-stats strong {
+        font-size: 25px;
+    }
+
+    .schedule-table {
+        font-size: 13px;
+        min-width: 650px;
+    }
+
+    .join-form {
+        padding: 25px 20px;
+    }
+
+    .membership-card {
+        padding: 30px 20px;
+    }
+
+    .featured {
+        transform: none;
+    }
+
+    .featured:hover {
+        transform: translateY(-8px);
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer .text-md-end {
+        text-align: center !important;
+        margin-top: 20px;
+    }
+
+}
